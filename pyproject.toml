@@ -18,4 +18,4 @@ dependencies = [
 [tool.setuptools]
 # Map the root directory to find the package folders
 package-dir = {"" = "."}
-packages = ["neuflow", "backbone", "utils"]
+packages = ["NeuFlow", "backbone", "utils"]
