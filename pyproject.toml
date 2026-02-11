@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuflow-v2"
+version = "1.0.0"
+description = "NeuFlow v2: High-Efficiency Optical Flow Estimation"
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "torchvision",
+    "timm",
+    "numpy",
+    "opencv-python"
+]
+
+# CRITICAL for flat-layout repos (research code)
+# This tells python: "These files in the root are importable modules"
+[tool.setuptools]
+py-modules = ["neuflow", "backbone", "utils"]
